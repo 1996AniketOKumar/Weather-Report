@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Report</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- <h1>Weather Report</h1> -->
+  <nav class="navbar navbar-expand-lg bg-body">
+    <div class="container-d">
+      <a class="nave">Weather Report</a>
+      <form class="for" role="search">
+        <input id="city" class="form-control u-2" type="search" placeholder="search" aria-label="search">
+        <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <h1 class="heading-title">Weather Report of <span id="cityName"></span></h1>
+  <div class="container">
+
+    
+
+
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="weatherTable">
+            <div class="weatherTable-header">
+              <h3 class="heading">Temperature</h3>
+              <div class="value">
+                <span id = "temp"></span><!--default--><small class="cel"><span>&#8451;</span></small>
+              </div>
+            </div>
+            <ul class="weather-content">
+              <li>Min Temperature is <span id="min_temp"></span></li>
+              <li>Max Temperature is <span id="max_temp"></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="weatherTable">
+            <div class="weatherTable-header">
+              <h3 class="heading">Wind Speed</h3>
+              <div class="value"><span id="wind.speed"></span><!--default value--><small class="month"> km/h</small>
+              </div>
+            </div>
+            <ul class="weather-content">
+              <li>Feels_like is <span id="feels_like"></span></li>
+              <li>Wind_degrees is <span id="wind.degrees"></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="weatherTable">
+            <div class="weatherTable-header">
+              <h3 class="heading">Humidity</h3>
+              <div class="value"><span id ="humidity"></span><small class="per">%</small>
+              </div>
+            </div>
+            <ul class="weather-content">
+              <li>Sunrise is <span id="sunrise"></span></li>
+              <li>Sunset is <span id="sunset"></span></li>
+              
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- <h2 class="display-6 text-center mb-4">Weather of other places</h2>
+
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th style="width: 34%;"></th>
+              <th style="width: 22%;">Feels_like</th>
+              <th style="width: 22%;">Humidity</th>
+              <th style="width: 22%;">Max_temp</th>
+              <th style="width: 22%;">Min_temp</th>
+              <th style="width: 22%;">Sunrise</th>
+              <th style="width: 22%;">Sunset</th>
+              <th style="width: 22%;">Temp</th>
+              <th style="width: 22%;">Wind_degrees</th>
+              <th style="width: 22%;">Wind_speed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Delhi</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Kolkata</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Pune</th>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">New York</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">London</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Paris</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
